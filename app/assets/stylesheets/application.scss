@@ -1,0 +1,69 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+ @font-face {
+     font-family: trumpFont;
+     src: url(SF-UI-Text-Bold.otf);
+ }
+
+ .trumpLogo {
+    font-family: trumpFont;
+ }
+
+ body {
+   font-family: trumpFont;
+ }
+
+
+.big_trump {
+  width: 100%;
+  bottom:0;
+}
+
+.trump_wrapper {
+  width:50%;
+}
+
+#header {
+   position: relative;
+   min-height: 400px;
+ }
+
+ .header_content {
+   position: absolute;
+   width:50%;
+   bottom: 0;
+ }
+ .header_content_left{
+   height: 100%;
+   background-image: url(image_path('bigtrump.jpg'));
+   background-size: cover;
+ }
+ .header_content_right {
+   right: 0;
+ }
+
+ .header_content_right span {
+   font-size: 100px;
+   font-family: trumpFont;
+ }
+
+
+.meat {
+  margin-left: 5em;
+  margin-right: 5em;
+}

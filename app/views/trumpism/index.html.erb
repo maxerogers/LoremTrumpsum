@@ -1,0 +1,23 @@
+<div id="header">
+  <div class="header_content header_content_left">
+  </div>
+
+  <div class="header_content header_content_right">
+    <span> LOREM TRUMPSUM</span>
+  </div>
+</div>
+<div style="width:100%; height: 10px; background-color: blue;"> </div>
+<div class="meat">
+  <div>
+    <p> Can't get enough of Trump? Who can blame you. Now you can bring Trump to work and use him for all of your copy.</p>
+  <%= form_tag('/') do -%>
+  <span> # of paragraphs </span>
+  <%= number_field_tag 'paragraphs', "#{params["paragraphs"]}", min: 1 %> <br>
+  <%= submit_tag "YOU'RE FIRED!" %>
+  <% end -%>
+  </div>
+
+  <div class="results">
+    <%= raw params["paragraphs"].to_i.times.map {"#{Trumpism.paragraph} "}.join %>
+  </div>
+<div>
