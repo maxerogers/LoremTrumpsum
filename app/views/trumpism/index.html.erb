@@ -12,6 +12,7 @@
     <p> Can't get enough of Trump? Who can blame you. Now you can bring Trump to work and use him for all of your copy.</p>
   <%= form_tag('/') do -%>
   <span> # of paragraphs </span>
+  <% params["paragraphs"] = 3 unless params["paragraphs"] %>
   <%= number_field_tag 'paragraphs', "#{params["paragraphs"]}", min: 1 %> <br>
   <%= submit_tag "YOU'RE FIRED!" %>
   <% end -%>
