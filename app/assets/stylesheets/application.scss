@@ -13,19 +13,8 @@
  *= require_tree .
  *= require_self
  */
-
-
- @font-face {
-     font-family: trumpFont;
-     src: url(SF-UI-Text-Bold.otf);
- }
-
- .trumpLogo {
-    font-family: trumpFont;
- }
-
  body {
-   font-family: trumpFont;
+   font-family: 'Noto Sans', sans-serif;
  }
 
 
@@ -59,7 +48,7 @@
 
  .header_content_right span {
    font-size: 100px;
-   font-family: trumpFont;
+   font-weight: bold;
  }
 
 
